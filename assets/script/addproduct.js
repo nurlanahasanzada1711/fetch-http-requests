@@ -1,10 +1,4 @@
-import {
-    gettAllCPosts,
-    // getPostsById,
-    // deletePostsById,
-    // postPosts,
-    // pustPostsById
-} from  "./httprequests.js"
+
 
 
 
