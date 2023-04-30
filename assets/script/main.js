@@ -1,6 +1,6 @@
-// import {
-//     deletePostsById,
-// } from "./httprequests.js"; 
+import {
+    deletePostsById,
+} from "./httprequests.js"; 
 
 
 
@@ -31,7 +31,7 @@ spinner.style.display = "none";
                 user.name
                 .trim()
                 .toLowerCase()
-                .icludes(e.target.value.trim().toLowerCase())
+                .includes(e.target.value.trim().toLowerCase())
             );
             filteredData.forEach((user) => {
                 let newCard = createCard(user);
@@ -81,10 +81,10 @@ function createCard(user) {
     let buttonDiv = document.createElement("div")
     buttonDiv.classList.add("buttonDiv");
 
-    let editButton = document.createElement("button");
+    let editButton = document.createElement("a");
     editButton.setAttribute("href", "home.html");
     editButton.classList.add("button");
-    editButton.classList.add("btn-primary");
+    editButton.classList.add(".btn-primary");
     editButton.innerText = "Edit";
 
     editButton.addEventListener("click", function () {

@@ -1,6 +1,6 @@
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 
-// GET ALL POSTS
+// GET ALL Category
 export const getAllPosts = async () => {
     let globalData;
     await fetch(`${baseURL}/posts`)
@@ -31,7 +31,7 @@ export const deletePostsById = async (id) => {
 };
 
 // POST 
-export const post = async (post) => {
+export const postPosts = async (post) => {
     let globalData;
     await fetch(`${baseURL}/posts/`, {
             method: 'POST',
@@ -48,8 +48,7 @@ export const post = async (post) => {
 }
 
 // PUT POSTS BY ID
-export const pustPosts = async (id, post) => {
-    let globalData;
+export const pustPostsById = async (id, post) => {
     await fetch(`${baseURL}/posts/${id}`, {
         method: 'PuT',
         headers: {
